@@ -1,6 +1,6 @@
 module.exports = function towelSort(matrix) {
     if (Array.isArray(matrix) && matrix.length) {
-        return matrix.reduce((acc, item, i) => i % 2 !== 0 ? acc.concat(item.reverse()) : acc.concat(item));
+        return matrix.reduce((b, a, c) => c % 2 !== 0 ? b.concat(a.reverse()) : b.concat(a));
     } else {
         return [];
     }
